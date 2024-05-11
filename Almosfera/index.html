@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>GerTECH</title>
+</head>
+<body>
+    <div class="main-block">
+        <div class="txt-but-main">
+            <div class="company-name">Almosfera</div>
+            <div class="company-descr-text">Инновация в сфере вентиляционных систем</div>
+            <a href="#" class="button">
+                <div class="btn-txt">Оставить заявку</div>
+            </a>
+        </div>
+        <img src="/Almosfera/img/tree.PNG" alt="" class="star">
+    </div>
+
+    <div class="sales">
+    <div class="video">
+        <video src="/Almosfera/video/TION Бризер 4S.mp4" autoplay muted loop class="video-recup"></video>
+    </div>
+
+    <div class="sales-descr">
+        <img src="/Almosfera/img/tree_1.PNG" alt="" class="star_1">
+        <div class="sales-descr-name">Акция!</div>
+        <div class="sales-descr-about">При покупке от 2-х рекуператоров Вам предоставляется скидка на обе позиции, подробности можно уточнить у менеджера</div>
+    </div>
+    </div>
+
+    <div class="edge">
+        <div class="edge-1">
+            <div class="edge-2">
+                <img src="/Almosfera/img/coins.png" alt="" class="edge-pic">
+                <p>Работаем без предоплаты</p>
+            </div>
+        </div>
+
+        <div class="edge-1">
+            <div class="edge-2">
+                <img src="/Almosfera/img/worldwide.png" alt="" class="edge-pic">
+                <p>Доставка по всей стране</p>
+            </div>
+        </div>
+
+        <div class="edge-1">
+            <div class="edge-2">
+                <img src="/Almosfera/img/garantee.png" alt="" class="edge-pic">
+                <p>Гарантия 1 год</p>
+            </div>
+        </div>
+
+        <div class="edge-1">
+            <div class="edge-2">
+                <img src="/Almosfera/img/partner.png" alt="" class="edge-pic">
+                <p>Официальный дилер</p>
+            </div>
+        </div>
+    </div>
+   
+   <div class="products">
+    <div class="products-pop">
+        <div class="products-pop-block">
+            <div class="products-pop-block-img">
+                <img src="/Almosfera/img/vents-501.png" alt="" class="photo-style">
+            </div>
+            <div class="products-pop-block-about">
+                <div class="products-pop-block-about-main">
+                    Vents 501 WiFi
+                </div>
+                <div class="products-pop-block-about-descr">
+                    Наши лучшие рекуператоры
+                </div>
+                <div class="products-pop-block-about-button">
+                    <div class="btn-txt">Купить</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="products-pop-block">
+            <div class="products-pop-block-img">
+                <img src="/Almosfera/img/vents-501.png" alt="" class="photo-style">
+            </div>
+            <div class="products-pop-block-about">
+                <div class="products-pop-block-about-main">
+                    Vents 501 WiFi
+                </div>
+                <div class="products-pop-block-about-descr">
+                    Наши лучшие рекуператоры
+                </div>
+                <div class="products-pop-block-about-button">
+                    <div class="btn-txt">Купить</div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+   </div>
+
+    <div class="contact-us-block">
+    <div class="back-office">
+        <div class="contact-form-text">Оставьте заявку и мы с Вами свяжемся</div>
+        <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+              <input type="text" name="name" id="name" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="phone" id="phone" placeholder="+7" required>
+            </div>
+            <div class="form-group">
+              <textarea name="comment" id="comment" rows="4" placeholder="Комментарий"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+
+    <div class="mailing">
+        <div class="mail-text">Подписаться на новости холдинга</div>
+        <div class="mail-feedback">
+        <div class="mail-input">
+            <input type="text" class="mail-input-form">
+        </div>
+        <a href="#" class="button">
+            <div class="btn-txt">Подписаться</div>
+        </a>
+        </div>
+        <div class="dick-pic">
+            <img src="/img/tst.png" alt="" class="big-dick">
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // JavaScript для автоматической подстановки "+7" в поле номера телефона
+        document.getElementById('phone').addEventListener('input', function(e) {
+          if (!e.target.value.startsWith('+7')) {
+            e.target.value = '+7 ' + e.target.value;
+          }
+        });
+      
+        // JavaScript для исчезновения описания полей при вводе значений
+        document.querySelectorAll('input, textarea').forEach(function(input) {
+          input.addEventListener('input', function(e) {
+            e.target.setAttribute('placeholder', '');
+          });
+        });
+      </script>
+      
+</body>
+<footer>
+    <div class="contact-us">
+    <div class="foot-name">GerTECH</div>
+    <a class="phone" href="tel:+79670910737">89670910737</a>
+    </div>
+</footer>
+</html>

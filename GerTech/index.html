@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <form id="contactForm" action="http://109.107.170.30:5000/submit_form" method="post">
+    <title>GerTECH</title>
+</head>
+<body>
+    <div class="main-block">
+        <div class="txt-but-main">
+            <div class="company-name">Группа компаний GerTECH</div>
+            <a href="#" class="button">
+                <div class="btn-txt">Оставить заявку</div>
+            </a>
+        </div>
+        <img src="/img/image 1.svg" alt="" class="star">
+    </div>
+    <div class="projects">
+        <div class="choose-project-text">Выберите интересующий Вас проект:</div>
+        <div class="projects-block-nav">
+        <div class="projects-blocks">
+            <a href="#" class="blocks-link">
+            <div class="project-block-1">
+                <div class="prject-name">GerIT</div>
+                <div class="project-descr">IT-аутсорсинг предприятий</div>
+            </div>
+            </a>
+        </div>
+
+        <div class="projects-blocks">
+            <a href="#" class="blocks-link">
+            <div class="project-block-1">
+                <div class="prject-name">Almosfera</div>
+                <div class="project-descr">Вентиляционные системы и рекуператоры</div>
+            </div>
+            </a>
+        </div>
+
+        <div class="projects-blocks">
+            <a href="#" class="blocks-link">
+            <div class="project-block-1">
+                <div class="prject-name">Drops</div>
+                <div class="project-descr">Одежда и кроссовки</div>
+            </div>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <div class="contact-us-block">
+    <div class="back-office">
+        <div class="contact-form-text">Оставьте заявку и мы с Вами свяжемся</div>
+        <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+              <input type="text" name="name" id="name" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="phone" id="phone" placeholder="+7" required>
+            </div>
+            <div class="form-group">
+              <textarea name="comment" id="comment" rows="4" placeholder="Комментарий"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+
+    <div class="mailing">
+        <div class="mail-text">Подписаться на новости холдинга</div>
+        <div class="mail-feedback">
+        <div class="mail-input">
+            <input type="text" class="mail-input-form">
+        </div>
+        <a href="#" class="button">
+            <div class="btn-txt">Подписаться</div>
+        </a>
+        </div>
+        <div class="dick-pic">
+            <img src="/img/tst.png" alt="" class="big-dick">
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // JavaScript для автоматической подстановки "+7" в поле номера телефона
+        document.getElementById('phone').addEventListener('input', function(e) {
+          if (!e.target.value.startsWith('+7')) {
+            e.target.value = '+7 ' + e.target.value;
+          }
+        });
+      
+        // JavaScript для исчезновения описания полей при вводе значений
+        document.querySelectorAll('input, textarea').forEach(function(input) {
+          input.addEventListener('input', function(e) {
+            e.target.setAttribute('placeholder', '');
+          });
+        });
+      </script>
+      
+</body>
+<footer>
+    <div class="contact-us">
+    <div class="foot-name">GerTECH</div>
+    <a class="phone" href="tel:+79670910737">89670910737</a>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,304 @@
+body{
+    max-width: 1900px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.main-block{
+    display: flex;
+    /* flex-wrap: wrap; */
+    background: #4B4B4B;
+    max-width: 100%;
+    height: 565px;
+    border-radius: 30px;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+.txt-but-main{
+    display: flex;
+    flex-direction: column;
+}
+.company-name{
+    font-size: 48px;
+    color: #fff;
+    font-family: inter;
+    margin: 40px;
+}
+.button{
+    background: #BBFF33;
+    max-width: 250px;
+    max-height: 60px;
+    text-align: center;
+    margin: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.btn-txt{
+    padding: 20px;
+    font-family: inter;
+    font-size: 20px;
+    color: black;
+}
+.projects{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.choose-project-text{
+    text-align: center;
+    font-family: inter;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.projects-block-nav{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.projects-blocks{
+    width: 33.3%;
+    height: 200px;
+    background: #F5F5F5;
+    border-radius: 30px;
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+.blocks-link{
+    text-decoration: none;
+}
+.prject-name {
+    font-family: inter;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    background: #bf3;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+.project-descr{
+    font-family: inter;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+.contact-us-block{
+    display: flex;
+    justify-content: space-between;
+}
+.mailing {
+    display: flex;
+    position: relative; /* Добавлено */
+    background: #F5F5F5;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 30px;
+    justify-content: right;
+    margin: 20px;
+    margin-bottom: 100px;
+    padding-top: 10%;
+}
+.mail-feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+}
+.mail-text{
+    font-family: inter;
+    font-size: 20px;
+    padding: 40px;
+}
+.mail-input{
+    width: 400px;
+}
+.mail-input-form{
+    width: 452px;
+    height: 53px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+footer{
+    max-width: 1900px;
+    background: #4B4B4B;
+    height: 100px;
+    border-radius: 30px;
+    align-content: center;
+    margin: 20px;
+}
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: #fff;
+    font-family: inter;
+    font-size: 20px;
+}
+.phone{
+    text-decoration: none;
+    color: #fff;
+}
+.dick-pic {
+    position: absolute; /* Изменено */
+    bottom: 0; /* Добавлено */
+    right: 0; /* Добавлено */
+}
+.big-dick {
+    width: 100%;
+}
+.star{
+    width: 30%;
+    margin-right: 10%;
+}
+.project-block-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    margin: auto;
+}
+.back-office{
+    display: flex;
+    flex-direction: column;
+    background: #4B4B4B;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+.contact-form-text{
+    text-align: center;
+    font-family: inter;
+    font-size: 40px;
+    /* margin-bottom: 50px; */
+    color: #fff;
+    padding: 40px;
+}
+#contactForm{
+    width: 70%;
+    padding: 40px;
+}
+.form-group {
+    margin-bottom: 20px;
+  }
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+    color: black;
+    background: #F5F5F5;
+    font-family: inter;
+    border-radius: 10px;
+  }
+input[type="submit"] {
+    background-color: #bf3;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+input[type="submit"]:hover {
+    background-color: #bf3;
+  }
+
+@media(max-width: 450px){
+    body{
+        margin: 0 auto;
+    }
+    .main-block{
+        /* width: 94%; */
+        height: 450px;
+    }
+    .star{
+        display: none;
+    }
+    .projects-block-nav{
+        display: block;
+    }
+    .projects-blocks{
+        width: 90%;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    footer{
+        text-align: center;
+    }
+    .mailing{
+        flex-direction: column;
+        /* max-height: 320px; */
+    }
+    .mail-input-form{
+        width: 300px;
+    }
+    .button{
+        width: 300px;
+    }
+    .dick-pic{
+        display: none;
+    }
+    .blocks-link{
+        text-align: center;
+    }
+    .txt-but-main{
+        align-items: center;
+    }
+    .contact-us-block{
+        flex-direction: column;
+    }
+    .mail-input{
+        width: 100%;
+    }
+    .mail-text{
+        padding-bottom: 0;
+    }
+    .company-name{
+        font-size: 28px;
+    }
+    .choose-project-text{
+        font-size: 28px;
+    }
+    .contact-form-text{
+        font-size: 28px;
+        padding-bottom: 0;
+    }
+    #contactForm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .form-group{
+        width: 300px;
+    }
+    .back-office{
+        margin-bottom: 50px;
+    }
+    .mailing{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 1000px){
+    
+}
